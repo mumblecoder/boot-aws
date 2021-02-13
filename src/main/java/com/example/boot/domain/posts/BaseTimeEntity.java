@@ -14,6 +14,10 @@ import java.time.LocalDateTime;
 @EntityListeners(AuditingEntityListener.class)
 public class BaseTimeEntity {
 
+    // @CreationTimestamp, @UpdateTimestamp 대신 이걸 쓰는 이유는
+    // 위 2개는 hibernate의 어노테이션이라서 구현체를 변경할경우 이 어노테이션도 다 변경해줘야 하기 때문이다.
+    // 자세한 설명은 https://github.com/jojoldu/freelec-springboot2-webservice/issues/96
+
     @CreatedDate
     private LocalDateTime createdDate;
 

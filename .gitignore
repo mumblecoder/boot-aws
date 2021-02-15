@@ -4,3 +4,4 @@
 .idea
 /out/
 /build/
+application-oauth.yml

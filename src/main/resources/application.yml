@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    include: oauth
+  jpa:
+    show_sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  h2:
+    console:
+      enabled: true

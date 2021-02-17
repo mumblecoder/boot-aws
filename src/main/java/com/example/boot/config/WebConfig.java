@@ -1,5 +1,6 @@
-package com.example.boot.config.auth;
+package com.example.boot.config;
 
+import com.example.boot.config.auth.LoginUserArgumentResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
